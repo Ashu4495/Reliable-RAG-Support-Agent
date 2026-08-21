@@ -165,17 +165,16 @@ Seven real failures discovered during iterative development, testing, and refine
 
 ## 10. Demo
 
-### Video Walkthrough
+### AI Support Agent Demo
 
-![Aster & Row Customer Support AI Agent Demo](docs/demo.gif)
+![Aster & Row AI Support Agent Demo](docs/demo.gif)
 
-- **Walkthrough Animation:** [`docs/demo.gif`](docs/demo.gif)
-- **WebM Video:** [▶️ Watch Demo (WebM)](docs/Demo.webm)
+[▶️ Watch the full 2–4 minute demo](Demo.webm)
 
-The 2–4 minute demo demonstrates:
-- **Knowledge-Base Q&A:** Accurate policy answers with separated source citations (`Source: filename.md → Heading`).
-- **Order Lookup:** Status and delivery tracking for `ORD-1007` with full PII redaction.
-- **Multi-Turn Conversation:** Contextual follow-up answering *"When will it arrive?"* and carrier inquiries without repeating order IDs.
-- **Safe Abstention / Human Escalation:** Correct refusal on ungrounded questions and recommendation of human support.
-- **Policy Conflict Detection:** Transparent handling of contradictory Breeze Tumbler cleaning policies.
-- **Automated Evaluation:** Full automated test suite execution passing 100% of visible and custom cases.
+The demo covers:
+- Knowledge-base question with citations
+- Order lookup
+- Multi-turn conversation
+- Safe abstention / human-support recommendation
+- Policy conflict detection
+- Evaluation suite execution
