@@ -165,15 +165,11 @@ Seven real failures discovered during iterative development, testing, and refine
 
 ## 10. Demo
 
-### Video Walkthrough
+### Video / Animation Walkthrough
 
-https://github.com/user-attachments/assets/Demo.webm
+![Aster & Row Customer Support AI Agent Demo](docs/demo.gif)
 
-<video src="https://raw.githubusercontent.com/Ashu4495/Reliable-RAG-Support-Agent/main/docs/Demo.webm" controls="controls" width="100%" style="max-width: 100%;">
-  <a href="https://github.com/Ashu4495/Reliable-RAG-Support-Agent/blob/main/docs/Demo.webm">▶️ Click here to open and watch the demo video (docs/Demo.webm)</a>
-</video>
-
-**[▶️ Click here to open and watch the Aster & Row Support Agent Demo Video (docs/Demo.webm)](https://github.com/Ashu4495/Reliable-RAG-Support-Agent/blob/main/docs/Demo.webm)**
+*Direct video links:* [▶️ Watch Demo (MP4)](docs/Demo.mp4) • [▶️ Watch Demo (WebM)](docs/Demo.webm)
 
 The 2–4 minute demo demonstrates:
 - **Knowledge-Base Q&A:** Accurate policy answers with separated source citations (`Source: filename.md → Heading`).
