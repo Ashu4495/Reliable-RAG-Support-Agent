@@ -165,13 +165,12 @@ Seven real failures discovered during iterative development, testing, and refine
 
 ## 10. Demo
 
-### Video & Animation Walkthrough
+### Video Walkthrough
 
 ![Aster & Row Customer Support AI Agent Demo](docs/demo.gif)
 
-- **Interactive GIF Walkthrough:** [`docs/demo.gif`](docs/demo.gif)
+- **Walkthrough Animation:** [`docs/demo.gif`](docs/demo.gif)
 - **WebM Video:** [▶️ Watch Demo (WebM)](docs/Demo.webm)
-- **MP4 Video:** [▶️ Watch Demo (MP4)](docs/Demo.mp4)
 
 The 2–4 minute demo demonstrates:
 - **Knowledge-Base Q&A:** Accurate policy answers with separated source citations (`Source: filename.md → Heading`).
