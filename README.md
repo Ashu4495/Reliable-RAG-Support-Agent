@@ -30,7 +30,7 @@ This project delivers a reliable prototype customer support agent for Aster & Ro
 - **Prompt-Injection Protection:** Neutralizes hidden markdown directives (`> SYSTEM INSTRUCTION:`) and rejects prompt-leak attempts.
 - **Active Policy Conflict Detection:** Identifies contradictions between active official sources and alerts the customer while requesting human specialist review.
 - **Human-Support Escalation:** Flags requests requiring human attention (damaged final-sale exceptions, shipment exceptions, active policy conflicts, missing orders) while avoiding unnecessary escalation on standard refusals.
-- **Automated Evaluation Suite:** 21 automated evaluation cases (15 visible + 6 custom) and 22 pytest unit/regression tests.
+- **Automated Evaluation Suite:** 21 automated evaluation cases (15 visible + 6 custom) and 23 pytest unit/regression tests.
 - **Debug & Observability Mode:** Expandable trace inspector exposing queries, chunk scores, retrieved context, tool arguments, and validation steps.
 
 ---
@@ -230,7 +230,7 @@ python -m pytest -v
 ### What the Evaluation Tests
 - **Visible Cases (`evaluation/visible-cases.json`):** 15 core scenarios covering standard returns, TrailPlus windows, damaged final-sale exceptions, international shipping, unsupported countries, valid order lookups, cancelled stale ETA suppression, unknown orders, null ETAs, order data privacy, warranty durations, prompt injections, abstention, and active source conflicts.
 - **Custom Cases (`evaluation/custom-cases.json`):** 6 edge cases covering cancellation snapshot time windows, price adjustments on final-sale items, shipment exception escalation, prompt leak defense, Canada direct exchange policies, and multi-turn carrier resolution.
-- **Pytest Suite (`tests/`):** 22 unit and regression tests verifying parsing, chunking, authority ranking, conflict detection, tool normalization, PII redaction, and specific regression cases.
+- **Pytest Suite (`tests/`):** 23 unit and regression tests verifying parsing, chunking, authority ranking, conflict detection, tool normalization, PII redaction, and specific regression cases.
 
 ---
 
@@ -254,7 +254,7 @@ The evaluation suite executes all 21 test cases across 11 functional categories.
 | **Tool Reliability** | 3 / 4 (75.0%) | **4 / 4 (100.0%)** | Passed |
 | **Tool Use** | 2 / 2 (100.0%) | **2 / 2 (100.0%)** | Passed |
 | **OVERALL** | **14 / 21 (66.7%)** | **21 / 21 (100.0%)** | **All Passed** |
-| **Pytest Suite** | **17 / 22 (77.3%)** | **22 / 22 (100.0%)** | **All Passed** |
+| **Pytest Suite** | **17 / 23 (73.9%)** | **23 / 23 (100.0%)** | **All Passed** |
 
 ---
 
@@ -446,7 +446,7 @@ To maintain high reliability, minimal dependencies, and strict adherence to take
 - [x] Policy conflict detection identifies and reports contradictions (Breeze Tumbler)
 - [x] All 15 visible evaluation cases pass (`15/15`)
 - [x] At least 5 custom evaluation edge cases added and passing (`6/6`)
-- [x] All 22 automated pytest tests passing (`22/22`)
+- [x] All 23 automated pytest tests passing (`23/23`)
 - [x] Bug diary documents all real failure reproductions and fixes ([BUG_DIARY.md](BUG_DIARY.md))
 - [x] Baseline and final metrics documented honestly
 - [x] Demo GIF/video recorded and embedded ([Demo.webm](Demo.webm))

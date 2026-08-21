@@ -129,3 +129,25 @@ def test_regression_5_system_prompt_leak_refusal():
     assert any(k in res["response"].lower() for k in ["cannot reveal", "cannot provide", "not authoritative", "refuse"])
     assert "You are the official AI Customer Support Agent" not in res["response"]
     assert "CORE POLICIES" not in res["response"]
+
+def test_regression_6_product_care_multi_heading_retrieval():
+    """
+    TEST 6:
+    Question: 'How should I care for my product?'
+    Expected:
+    - Meaningful care instructions for bags, packing cubes, and tumbler.
+    - Not just the warranty disclaimer.
+    - Citations include all 3 care headings.
+    """
+    agent = SupportAgent()
+    session_id = "test_reg_6"
+    agent.session_manager.clear_session(session_id)
+    res = agent.process_message("How should I care for my product?", session_id=session_id)
+    
+    assert "Bags and backpacks" in res["response"]
+    assert "Packing cubes" in res["response"]
+    assert "Breeze Tumbler" in res["response"]
+    assert "11-product-care.md → Bags and backpacks" in res["citations"]
+    assert "11-product-care.md → Packing cubes" in res["citations"]
+    assert "11-product-care.md → Breeze Tumbler" in res["citations"]
+    assert res["needs_handoff"] is False
