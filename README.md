@@ -167,7 +167,7 @@ Seven real failures discovered during iterative development, testing, and refine
 
 ### Video Walkthrough
 
-[▶️ Watch the Aster & Row Customer Support AI Agent Demo](Demo.webm)
+[▶️ Watch the Aster & Row Customer Support AI Agent Demo](docs/Demo.webm)
 
 The 2–4 minute demo demonstrates:
 - **Knowledge-Base Q&A:** Accurate policy answers with separated source citations (`Source: filename.md → Heading`).
