@@ -263,7 +263,7 @@
           "fraud review cleared"
         ],
         "tool": "optional_sanitized_lookup",
-        "handoff": true
+        "handoff": false
       }
     },
     {
